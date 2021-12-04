@@ -116,7 +116,7 @@ def turnOn():
     pub('led','{"id":"1","name":"LED","data":"1","unit":""}')
     dosang = sub('light')
     return render_template('index.html',mode=dosang)
-
+# tạo hàm tắt
 @app.route('/off')
 def turnOff():
     pub('led','{"id":"1","name":"LED","data":"0","unit":""}')
