@@ -49,7 +49,7 @@ def Get_All_Data_From_Feed(id):
     data = aio.data(id)
     json_data = []
     for d in data:
-        json_data.append(json.loads(d.value))
+        json_data.append(json.loads(d.value)) # json, thêm dữ liệu
         #print("Data value: {0}".format(d.value))
     return json_data
 
